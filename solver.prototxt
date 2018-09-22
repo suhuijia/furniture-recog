@@ -1,0 +1,17 @@
+net: "examples/resnet/resnet_train_val.prototxt"
+test_iter: 75
+test_interval: 1285
+test_initialization: false
+display: 50
+base_lr: 0.001
+lr_policy: "multistep"
+stepvalue: 12850  # 10 epoch
+stepvalue: 25700  # 20 epoch
+stepvalue: 32100  # 25 epoch
+gamma: 0.1
+max_iter: 64200
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 2500
+snapshot_prefix: "examples/resnet/model/resnet_v5"
+solver_mode: GPU
